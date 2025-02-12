@@ -1,20 +1,21 @@
 #include "util.h"
 #include <time.h>
 #include "sort.h"
-#define SIZE 10
+#define SIZE 20
 
 int main() {
 	srand(time(NULL));
 
-	int vector[SIZE];
+	int vector[SIZE]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
-	create_array_elements(vector, SIZE, 0, 10);
+	create_array_elements(vector, SIZE, -10, 10);
 
-	cout << convert_array_to_string(vector, SIZE) << endl;
+	cout << "Array before: " << convert_array_to_string(vector, SIZE) << endl;
 
-	bubble_sort(vector, SIZE);
+	selected_sort(vector, SIZE);
 
-	cout << convert_array_to_string(vector, SIZE) << endl;
+	cout << "Array after: " << convert_array_to_string(vector, SIZE) << endl;
 
+	system("pause");
 	return 0;
 }
