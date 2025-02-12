@@ -3,6 +3,7 @@
 #include "sort.h"
 #define SIZE 20
 
+// Прост
 int main() {
 	srand(time(NULL));
 
