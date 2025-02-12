@@ -1,9 +1,9 @@
-#include "util.h"
+п»ї#include "util.h"
 #include <time.h>
 #include "sort.h"
 #define SIZE 20
 
-// Прост
+// РџСЂРѕСЃС‚
 int main() {
 	srand(time(NULL));
 
